@@ -7,6 +7,10 @@
 
 import Foundation
 
+/*
+ 4 - Протокол "Drawable"
+  Определи протокол Drawable с методом draw().
+ */
 protocol Drawable {
     func draw()
 }

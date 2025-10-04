@@ -54,6 +54,30 @@ jack.introduce()
 
 /*
  4 - Протокол "Drawable"
-  Определи протокол Drawable с методом draw().
   Реализуй его в классе Circle и Square, чтобы они выводили в консоль описание: "Рисую круг радиусом 10" или "Рисую квадрат со стороной 5".
  */
+
+class Circle: Drawable {
+    private let radius: Int
+    
+    init(radius: Int) {
+        self.radius = radius
+    }
+    
+    func draw() {
+        print("Рисую круг радиусом \(radius)")
+    }
+}
+
+class Square: Drawable {
+    
+    private let side: Int
+    
+    init(side: Int) {
+        self.side = side
+    }
+    
+    func draw() {
+        print("Рисую квадрат со стороной \(side)")
+    }
+}
