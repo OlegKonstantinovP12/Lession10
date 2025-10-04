@@ -7,12 +7,6 @@
 
 import Foundation
 
-/*
- 7 - Протокол "Named"
- Создай протокол Named с одним свойством name: String.
- Реализуй его в классе Dog и структуре Book.
- */
-
 
 //MARK: - Проверка Задания 1
 var testString: String = "Яд Ефрему, а умер Федя"
@@ -137,4 +131,23 @@ let phone: Phone = Phone(brand: "Iphone", model: "17 Pro Max")
 
 ford.printInfo()
 phone.printInfo()
+
+/*
+  7 - Протокол "Named"
+  Создай протокол Named с одним свойством name: String.
+  Реализуй его в классе Dog и структуре Book.
+ */
+
+class Dog: Named {
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+
+struct Book: Named {
+    let name: String
+}
+
 
