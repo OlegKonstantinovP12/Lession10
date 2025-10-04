@@ -6,3 +6,13 @@
 //
 
 import Foundation
+/*
+ 1 - Расширение String
+ Добавь в String функцию isPalindrome(), которая проверяет, является ли строка палиндромом.
+ */
+extension String {
+    func isPolindrome() -> Bool {
+        let original = self.lowercased().filter { $0.isLetter }
+        return original == String(original.reversed()) ?  true :  false
+    }
+}
