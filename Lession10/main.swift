@@ -150,4 +150,10 @@ struct Book: Named {
     let name: String
 }
 
+//MARK: - Проверка задания 7
 
+let dog: Dog = Dog(name: "Buddy")
+let book: Book = Book(name: "Harry Potter")
+
+print("Собачку зовут \(dog.name)")
+print("Книга \(book.name) лежит на полке")
