@@ -8,11 +8,6 @@
 import Foundation
 
 /*
-
- 5 - Протокол "Calculatable"
- Определи протокол с методом calculate(a:b:) -> Int.
- Реализуй его в структурах Adder, Multiplier
-
  6 - Протокол "Printable"
  Определи протокол с методом printInfo().
  Реализуй в Car (пусть выводит марку) и Phone (пусть выводит модель).
@@ -82,9 +77,25 @@ class Square: Drawable {
     }
 }
 
+//MARK: - Проверка задания 4
 let circle: Circle = Circle(radius: 10)
 let square: Square = Square(side: 5)
 
 circle.draw()
 square.draw()
 
+/*
+ 5 - Протокол "Calculatable"
+ Реализуй его в структурах Adder, Multiplier
+ */
+struct Adder: Calculatable {
+    func calculate(a: Int, b: Int) -> Int {
+        a + b
+    }
+}
+
+struct Multiplier: Calculatable {
+    func calculate(a: Int, b: Int) -> Int {
+        a * b
+    }
+}
