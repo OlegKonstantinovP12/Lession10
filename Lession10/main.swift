@@ -99,3 +99,10 @@ struct Multiplier: Calculatable {
         a * b
     }
 }
+
+//MARK: - Проверка задания 5
+let adder = Adder()
+let multiplier = Multiplier()
+
+print(adder.calculate(a: 3, b: 4))
+print(multiplier.calculate(a: 4, b: 5))
