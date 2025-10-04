@@ -127,7 +127,14 @@ struct Phone: Printable {
     let model: String
     
     func printInfo() {
-        print("Телефон\n⬇️\n Марка - \(brand)\n Модель - \(model)\n")
+        print("Телефон\n ⬇️\n Марка - \(brand)\n Модель - \(model)\n")
     }
 }
+
+//MARK: - Проверка задания 6
+let ford: Car = Car(brand: "Ford", model: "Focus")
+let phone: Phone = Phone(brand: "Iphone", model: "17 Pro Max")
+
+ford.printInfo()
+phone.printInfo()
 
