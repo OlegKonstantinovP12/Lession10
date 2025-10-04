@@ -81,3 +81,10 @@ class Square: Drawable {
         print("Рисую квадрат со стороной \(side)")
     }
 }
+
+let circle: Circle = Circle(radius: 10)
+let square: Square = Square(side: 5)
+
+circle.draw()
+square.draw()
+
