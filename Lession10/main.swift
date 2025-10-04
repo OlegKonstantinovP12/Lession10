@@ -8,10 +8,6 @@
 import Foundation
 
 /*
- 6 - Протокол "Printable"
- Определи протокол с методом printInfo().
- Реализуй в Car (пусть выводит марку) и Phone (пусть выводит модель).
-
  7 - Протокол "Named"
  Создай протокол Named с одним свойством name: String.
  Реализуй его в классе Dog и структуре Book.
@@ -106,3 +102,32 @@ let multiplier = Multiplier()
 
 print(adder.calculate(a: 3, b: 4))
 print(multiplier.calculate(a: 4, b: 5))
+
+/*
+ 6 - Протокол "Printable"
+ Реализуй в Car (пусть выводит марку) и Phone (пусть выводит модель).
+ */
+
+class Car: Printable {
+    private let brand: String
+    private let model: String
+    
+    init(brand: String, model: String) {
+        self.brand = brand
+        self.model = model
+    }
+    
+    func printInfo() {
+        print("Автомобиль\n ⬇️\n Марка - \(brand)\n Модель - \(model)\n")
+    }
+}
+
+struct Phone: Printable {
+    let brand: String
+    let model: String
+    
+    func printInfo() {
+        print("Телефон\n⬇️\n Марка - \(brand)\n Модель - \(model)\n")
+    }
+}
+
